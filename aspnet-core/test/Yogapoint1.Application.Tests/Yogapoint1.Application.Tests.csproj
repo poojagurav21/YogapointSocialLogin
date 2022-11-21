@@ -1,0 +1,19 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <Import Project="..\..\common.props" />
+
+  <PropertyGroup>
+    <TargetFramework>net6.0</TargetFramework>
+    <RootNamespace>Yogapoint1</RootNamespace>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\..\src\Yogapoint1.Application\Yogapoint1.Application.csproj" />
+    <ProjectReference Include="..\Yogapoint1.Domain.Tests\Yogapoint1.Domain.Tests.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.NET.Test.Sdk" Version="17.2.0" />
+  </ItemGroup>
+
+</Project>

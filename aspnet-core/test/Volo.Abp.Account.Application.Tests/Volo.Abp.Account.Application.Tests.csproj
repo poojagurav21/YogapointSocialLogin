@@ -1,0 +1,29 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup><LangVersion>latest</LangVersion>
+    <TargetFramework>net6.0</TargetFramework>
+    <RootNamespace />
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.NET.Test.Sdk" Version="$(MicrosoftNETTestSdkPackageVersion)" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.Proxies" Version="$(MicrosoftEntityFrameworkCorePackageVersion)" />
+    <PackageReference Include="NSubstitute" Version="$(NSubstitutePackageVersion)" />
+    <PackageReference Include="Shouldly" Version="$(ShouldlyPackageVersion)" />
+    <PackageReference Include="xunit" Version="$(xUnitPackageVersion)" />
+    <PackageReference Include="xunit.extensibility.execution" Version="$(xUnitExtensibilityExecutionPackageVersion)" />
+    <PackageReference Include="xunit.runner.visualstudio" Version="$(xUnitRunnerVisualstudioPackageVersion)" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Volo.Abp.Autofac" Version="6.0.0" />
+    <PackageReference Include="Volo.Abp.Authorization" Version="6.0.0" />
+    <PackageReference Include="Volo.Abp.TestBase" Version="6.0.0" />
+    <PackageReference Include="Volo.Abp.EntityFrameworkCore.Sqlite" Version="6.0.0" />
+    <ProjectReference Include="..\..\src\Volo.Abp.Account.Application\Volo.Abp.Account.Application.csproj" />
+    <PackageReference Include="Volo.Abp.Identity.AspNetCore" Version="6.0.0" />
+    <PackageReference Include="Volo.Abp.Identity.EntityFrameworkCore" Version="6.0.0" />
+    <PackageReference Include="Volo.Abp.PermissionManagement.EntityFrameworkCore" Version="6.0.0" />
+  </ItemGroup>
+
+</Project>
